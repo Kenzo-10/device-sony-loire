@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Platform path
-PLATFORM_COMMON_PATH := device/sony/loire
+PLATFORM_COMMON_PATH := device/sony/msm8956
 PRODUCT_PLATFORM_SOD := true
 
 TARGET_BOARD_PLATFORM := msm8952
@@ -40,7 +40,7 @@ BOARD_KERNEL_CMDLINE += androidboot.bootdevice=7824900.sdhci
 # Serial console
 #BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0x7af0000 restore_msm_uart=0x01014000
 
-TARGET_RECOVERY_FSTAB ?= $(PLATFORM_COMMON_PATH)/rootdir/vendor/etc/fstab.loire
+TARGET_RECOVERY_FSTAB ?= $(PLATFORM_COMMON_PATH)/rootdir/vendor/etc/fstab.msm8956
 
 # Wi-Fi definitions for Broadcom solution but using brcmfmac instead of bcmdhd kernel driver
 BOARD_WLAN_DEVICE           := qcwcn

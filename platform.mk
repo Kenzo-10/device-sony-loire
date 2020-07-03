@@ -13,11 +13,11 @@
 # limitations under the License.
 
 # Platform path
-PLATFORM_COMMON_PATH := device/sony/loire
+PLATFORM_COMMON_PATH := device/sony/msm8956
 
 TARGET_LEGACY_KEYMASTER := true
 
-SOMC_PLATFORM := loire
+SOMC_PLATFORM := msm8956
 SOMC_KERNEL_VERSION := 4.9
 
 $(call inherit-product, device/sony/common/common.mk)
@@ -92,8 +92,8 @@ PRODUCT_COPY_FILES += \
 
 # Platform specific init
 PRODUCT_PACKAGES += \
-    init.loire \
-    init.loire.pwr \
+    init.msm8956 \
+    init.msm8956.pwr \
     ueventd
 
 # Audio
